@@ -249,8 +249,7 @@ nav ul li a:hover::after {
 .layer {
   width: 100%;
   height: 0;
-  /* background: linear-gradient(rgba(29, 29, 29, 0.6), #b8b8b8); */
-  background: linear-gradient(#b8b8b8, rgba(29, 29, 29, 0.6));
+  background: radial-gradient(#ffffff, rgba(29, 29, 29, 0.9));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -262,12 +261,14 @@ nav ul li a:hover::after {
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  /* font-size: 14px; */
+  font-size: 20px;
   transition: height 0.5s;
 }
-.layer h3 {
+.layer h3,
+p {
   font-weight: 1500;
   margin-bottom: 20px;
+  color: rgb(0, 0, 0);
 }
 .layer a {
   margin-top: 20px;
@@ -280,6 +281,7 @@ nav ul li a:hover::after {
   height: 60px;
   border-radius: 60%;
   text-align: center;
+  background: radial-gradient(#c2c2c2, rgba(80, 80, 80, 0.9));
 }
 .work:hover img {
   transform: scale(1.1);
